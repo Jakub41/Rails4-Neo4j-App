@@ -334,3 +334,49 @@ Storage files: (filename : modification date - size)
 2017-10-20 12:07:24.479+0000 INFO [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
 2017-10-20 12:07:25.610+0000 INFO [o.n.k.i.DiagnosticsManager] --- SERVER STARTED START ---
 2017-10-20 12:07:26.439+0000 INFO [o.n.k.i.DiagnosticsManager] --- SERVER STARTED END ---
+2017-10-20 12:44:23.976+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Neo4j::Migrations::SchemaMigration(migration_id) [provider: {key=lucene, version=1.0}]]
+2017-10-20 12:44:24.129+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@4e0bf1c0[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-10-20 12:44:24.129+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@4e0bf1c0[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-10-20 12:44:24.160+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:Neo4j::Migrations::SchemaMigration(migration_id) [provider: {key=lucene, version=1.0}]]
+2017-10-20 12:44:24.557+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Category(uuid) [provider: {key=lucene, version=1.0}]]
+2017-10-20 12:44:24.566+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@229efd17[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-10-20 12:44:24.567+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@229efd17[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-10-20 12:44:24.575+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:Category(uuid) [provider: {key=lucene, version=1.0}]]
+2017-10-20 12:44:24.668+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [11]:  Starting check pointing...
+2017-10-20 12:44:24.668+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [11]:  Starting store flush...
+2017-10-20 12:44:24.685+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 11 to [/Users/jakublemiszewski/desktop/www/Neo4j-Practice/EmployeeDeprtmentProblemNeo/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/jakublemiszewski/desktop/www/Neo4j-Practice/EmployeeDeprtmentProblemNeo/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-10-20 12:44:24.686+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 11 to [/Users/jakublemiszewski/desktop/www/Neo4j-Practice/EmployeeDeprtmentProblemNeo/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/jakublemiszewski/desktop/www/Neo4j-Practice/EmployeeDeprtmentProblemNeo/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-10-20 12:44:24.691+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [11]:  Store flush completed
+2017-10-20 12:44:24.691+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [11]:  Starting appending check point entry into the tx log...
+2017-10-20 12:44:24.692+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [11]:  Appending check point entry into the tx log completed
+2017-10-20 12:44:24.692+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [11]:  Check pointing completed
+2017-10-20 12:44:24.692+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-10-20 12:44:24.692+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-10-20 12:44:24.828+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Company(uuid) [provider: {key=lucene, version=1.0}]]
+2017-10-20 12:44:24.831+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@3e8a9112[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-10-20 12:44:24.831+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@3e8a9112[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-10-20 12:44:24.843+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:Company(uuid) [provider: {key=lucene, version=1.0}]]
+2017-10-20 12:44:24.923+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Department(uuid) [provider: {key=lucene, version=1.0}]]
+2017-10-20 12:44:24.925+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@7b87eb1f[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-10-20 12:44:24.926+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@7b87eb1f[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-10-20 12:44:24.931+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:Department(uuid) [provider: {key=lucene, version=1.0}]]
+2017-10-20 12:44:24.996+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Person(uuid) [provider: {key=lucene, version=1.0}]]
+2017-10-20 12:44:24.998+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@480c8f34[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-10-20 12:44:24.998+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@480c8f34[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-10-20 12:44:25.004+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:Person(uuid) [provider: {key=lucene, version=1.0}]]
+2017-10-20 12:44:25.085+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Technology(uuid) [provider: {key=lucene, version=1.0}]]
+2017-10-20 12:44:25.088+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@5f1044e6[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-10-20 12:44:25.088+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@5f1044e6[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-10-20 12:44:25.096+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:Technology(uuid) [provider: {key=lucene, version=1.0}]]

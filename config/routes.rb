@@ -1,4 +1,34 @@
 Rails.application.routes.draw do
+  get 'companies/index'
+
+  get 'companies/new'
+
+  get 'companies/create'
+
+  get 'companies/update'
+
+  get 'companies/destroy'
+
+  get 'companies/set_company'
+
+  get 'companies/company_params'
+
+  get 'categories/index'
+
+  get 'categories/populate_categories'
+
+  get 'categories/new'
+
+  get 'categories/create'
+
+  get 'categories/get_departments'
+
+  get 'categories/destroy'
+
+  get 'categories/set_category'
+
+  get 'categories/category_params'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
