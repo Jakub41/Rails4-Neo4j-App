@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<h1 style="text-align:center">Departments</h1>
+<%= select_tag(:company_selected, options_for_select(Company.all.map {|p| [p.name, p.uuid] }),include_blank: 'Select Company',class: "col-md-offset-3 col-md-6 btn btn-default dropdown-toggle")%>
+<br/>
+<div id="departments">
+</div>
+
+<br/>
+
+<%= link_to 'New Department', new_department_path, class: "col-md-offset-3 btn btn-primary" %>

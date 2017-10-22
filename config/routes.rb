@@ -1,86 +1,20 @@
 Rails.application.routes.draw do
-  get 'companies/index'
+  resources :technologies
+  resources :people
+  resources :categories
+  resources :departments
+  resources :companies
 
-  get 'companies/new'
-
-  get 'companies/create'
-
-  get 'companies/update'
-
-  get 'companies/destroy'
-
-  get 'companies/set_company'
-
-  get 'companies/company_params'
-
-  get 'categories/index'
-
-  get 'categories/populate_categories'
-
-  get 'categories/new'
-
-  get 'categories/create'
-
-  get 'categories/get_departments'
-
-  get 'categories/destroy'
-
-  get 'categories/set_category'
-
-  get 'categories/category_params'
-
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
-
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
-
-  # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
-
-  # Example of named route that can be invoked with purchase_url(id: product.id)
-  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
-
-  # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
-
-  # Example resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
-
-  # Example resource route with sub-resources:
-  #   resources :products do
-  #     resources :comments, :sales
-  #     resource :seller
-  #   end
-
-  # Example resource route with more complex sub-resources:
-  #   resources :products do
-  #     resources :comments
-  #     resources :sales do
-  #       get 'recent', on: :collection
-  #     end
-  #   end
-
-  # Example resource route with concerns:
-  #   concern :toggleable do
-  #     post 'toggle'
-  #   end
-  #   resources :posts, concerns: :toggleable
-  #   resources :photos, concerns: :toggleable
-
-  # Example resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
+  root 'application#index'
+  get '/populate_departments' => 'departments#populate_departments'
+  get '/categories/new/get_departments' => 'categories#get_departments'
+  get '/categories/index/populate_categories' => 'categories#populate_categories'
+  get '/technologies/new/getcategory' => 'technologies#getcategory'
+  get '/technologies/index/populate_tech' => 'technologies#populate_tech'
+  get '/technologies/index/populate_tech_category' => 'technologies#populate_tech_category'
+  get '/people/new/getdepartments' => 'people#getdepartments'
+  get '/people/new/getcategories' => 'people#getcategories'
+  get '/people/new/gettechnology' => 'people#gettechnology'
+  get '/people/index/getpeople' => 'people#getpeople'
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -380,3 +380,16 @@ BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.Thre
 2017-10-20 12:44:25.088+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
 BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@5f1044e6[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
 2017-10-20 12:44:25.096+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:Technology(uuid) [provider: {key=lucene, version=1.0}]]
+2017-10-20 15:58:24.095+0000 WARN [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1013ms.
+2017-10-20 15:58:26.219+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [32]:  Starting check pointing...
+2017-10-20 15:58:26.220+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [32]:  Starting store flush...
+2017-10-20 15:58:26.237+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 32 to [/Users/jakublemiszewski/desktop/www/Neo4j-Practice/EmployeeDeprtmentProblemNeo/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/jakublemiszewski/desktop/www/Neo4j-Practice/EmployeeDeprtmentProblemNeo/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-10-20 15:58:26.239+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 32 to [/Users/jakublemiszewski/desktop/www/Neo4j-Practice/EmployeeDeprtmentProblemNeo/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/jakublemiszewski/desktop/www/Neo4j-Practice/EmployeeDeprtmentProblemNeo/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-10-20 15:58:26.242+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [32]:  Store flush completed
+2017-10-20 15:58:26.242+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [32]:  Starting appending check point entry into the tx log...
+2017-10-20 15:58:26.242+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [32]:  Appending check point entry into the tx log completed
+2017-10-20 15:58:26.242+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [32]:  Check pointing completed
+2017-10-20 15:58:26.242+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-10-20 15:58:26.242+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-10-21 00:59:05.941+0000 WARN [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 31487ms.
+2017-10-22 16:28:31.348+0000 WARN [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 16985ms.

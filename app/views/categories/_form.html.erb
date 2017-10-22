@@ -1,0 +1,30 @@
+<%= form_for(category) do |f| %>
+    <% if category.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(category.errors.count, "error") %> prohibited this category from being saved:</h2>
+          <ul>
+            <% category.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field form-group">
+      <%= f.label :name %>
+      <%= f.text_field :name, class: "form-control" %>
+    </div>
+    <br/>
+    <div>
+      <%= select_tag(:company_selected_category, options_for_select(Company.all.map {|p| [p.name, p.uuid] }), include_blank: 'Select Company',class: "col-md-4 btn btn-default dropdown-toggle") if !@category.persisted? %>
+    </div>
+    <br/>
+    <br/>
+    <div id = 'departments_for_category'>
+    </div>
+    <br/>
+    <br/>
+    <div class="actions">
+      <%= f.submit nil,:class => "btn btn-primary" %>
+    </div>
+<% end %>

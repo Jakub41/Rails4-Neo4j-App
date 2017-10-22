@@ -1,0 +1,4 @@
+<br/>
+<%= select_tag(:category_selected_type, options_for_select(@category.map {|p| [p.name, p.uuid] }), include_blank: 'Select Categotry',class: "col-md-4 btn btn-default dropdown-toggle")%>
+</br>
+</br>

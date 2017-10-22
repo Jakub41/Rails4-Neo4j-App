@@ -1,0 +1,8 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+<h3>Comapny Name:</h3><h3><%= @company.name %></h3>
+</p>
+
+<%= link_to 'Edit', edit_company_path(@company), :class => "btn btn-primary"  %>
+<%= link_to 'Back', companies_path,:class => "btn btn-primary"  %>

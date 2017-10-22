@@ -1,0 +1,8 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+<h3>Department Name:</h3><h3><%= @department.name %></h3>
+</p>
+
+<%= link_to 'Edit', edit_department_path(@department), :class => "btn btn-primary"  %>
+<%= link_to 'Back', departments_path , :class => "btn btn-primary"  %>
