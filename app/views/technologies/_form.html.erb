@@ -16,7 +16,7 @@
       <%= f.text_field :name ,class: "form-control"%>
     </div>
     <div class = "form-group">
-      <%= select_tag(:company_selected_tech_new, options_for_select(Company.all.map { |p| [p.name, p.uuid]}), include_blank: 'Select Company',class: "col-md-4 btn btn-default dropdown-toggle") if !@technology.persisted? %>
+      <%= select_tag(:company_selected_tech_new, options_for_select(Company.all.map { |p| [p.name, p.uuid]}), include_blank: 'Select Company',class: "col-md-4 btn btn-default dropdown-toggle") %>
     </div>
     <br/>
     <div id = "category_for_technology">

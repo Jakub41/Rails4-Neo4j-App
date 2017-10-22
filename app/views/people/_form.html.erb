@@ -17,7 +17,7 @@
     </div>
     </br>
     <div>
-      <%= select_tag(:company_select_employee, options_for_select(Company.all.map {|p| [p.name, p.uuid]}), include_blank: 'Select Company',class: "col-md-4 btn btn-default dropdown-toggle") if !@person.persisted? %>
+      <%= select_tag(:company_select_employee, options_for_select(Company.all.map {|p| [p.name, p.uuid]}), include_blank: 'Select Company',class: "col-md-4 btn btn-default dropdown-toggle") %>
     </div>
     <br/>
     <div id = "employee_criteria_new">
